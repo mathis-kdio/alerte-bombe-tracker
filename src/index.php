@@ -10,18 +10,18 @@ include_once("includes/header.php");
     <div class="row align-items-md-stretch">
       <div class="col-md-12">
         <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-          <h2>Les chiffres d'aujoud'hui</h2>
+          <h2>Les chiffres d'aujoud'hui (14-11-2023)</h2>
           <div class="row">
             <div class="col-md-3">
-              <h3>XXX</h3>
+              <h3>21</h3>
               <h4>Alertes à la bombe</h4>
             </div>
             <div class="col-md-3">
-              <h3>XXX</h3>
+              <h3>7</h3>
               <h4>Nombre de villes impactées</h4>
             </div>
             <div class="col-md-3">
-              <h3>XXX</h3>
+              <h3>21</h3>
               <h4>Etablissements scolaires impactés</h4>
             </div>
             <div class="col-md-3">
