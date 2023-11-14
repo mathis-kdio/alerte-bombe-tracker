@@ -1,0 +1,35 @@
+ville;date;nombre;type;nom;alerte
+Nice;14/11/23;1;college;Segurane;mail
+Nice;14/11/23;1;ecole;Saint-Thomas d Aquin;colis
+Manosque;14/11/23;1;college;Jean Giono;mail 
+Vizille;14/11/23;1;lycee;des Portes de l Oisans;appel 
+Villefontaine;14/11/23;1;college;Rene-Cassinmail;
+Saint-Just-Saint-Rambert;14/11/23;1;college;Anne Frank;
+Laval;14/11/23;1;college;Jules Renard;mail 
+Laval;14/11/23;1;college;Pierre Dubois;mail 
+Laval;14/11/23;1;college;Emmanuel de Martonne;mail 
+Laval;14/11/23;1;college;Alain Gerbault;mail 
+Laval;14/11/23;1;college;Jacques Monod;mail 
+Laval;14/11/23;1;college;Fernand Puech;mail 
+Laval;14/11/23;1;college;Sainte-Therese;mail 
+Laval;14/11/23;1;groupe scolaire;Immaculee Conception;mail 
+Laval;14/11/23;1;lycee;Douanier Rousseau;mail 
+Laval;14/11/23;1;lycee;Avesnieres;mail 
+Laval;14/11/23;1;lycee;Gaston Lesnard;mail 
+Laval;14/11/23;1;lycee;Reaumur;mail 
+Laval;14/11/23;1;lycee;Haute-Follis;mail 
+Laval;14/11/23;1;lycee;Agricampus;mail 
+Chazelles-sur-Lyon;14/11/23;1;college;Raoul-Follereau;mail 
+;14/11/23;1;;;
+;14/11/23;1;;;
+;14/11/23;1;;;
+;14/11/23;1;;;
+;;;;;
+;;;;;
+;;;;;
+Pessac;13/11/23;1;college;Mitterrand;mail
+Deuil-la-Barre;13/11/23;1;lycee;;appel 
+Meaux;13/11/23;1;lycee;Coubertin;message
+Cherbourg;13/11/23;1;lycee;Alexis-de-Tocqueville;
+;13/11/23;1;;;
+;13/11/23;1;;;
