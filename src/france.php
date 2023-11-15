@@ -44,7 +44,7 @@ include_once("includes/header.php");
 </main>
 
 <script>
-  d3.csv('alertes.csv').then(makeChart);
+  d3.csv('alertes_par_jours.csv').then(makeChart);
 
   function makeChart(data) {
     console.log(data)
@@ -52,11 +52,11 @@ include_once("includes/header.php");
     let dateLabels = data.map(function(d) {return d.date});
     let alertesData = data.map(function(d) {return d.nombre});
     new Chart(ctx, {
-      type: 'line',
+      type: 'bar',
       data: {
         labels: dateLabels,
         datasets: [{
-          label: '# nombre d\'alerte en France',
+          label: '# nombre d\'alerte en France par jour',
           data: alertesData,
           borderWidth: 1
         }]
