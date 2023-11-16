@@ -9,7 +9,7 @@ include_once("includes/header.php");
     
     <div class="row align-items-md-stretch">
       <div class="col-md-12">
-        <div class="h-100 p-5 bg-body-tertiary border rounded-3 mb-3">
+        <div class="p-5 bg-body-tertiary border rounded-3 mb-3">
           <h2>Les chiffres d'aujoud'hui (14-11-2023)</h2>
           <div class="row">
             <div class="col-md-3">
@@ -30,10 +30,53 @@ include_once("includes/header.php");
             </div>
           </div>
         </div>
+
+        <div class="p-5 bg-body-tertiary border rounded-3 mb-3">
+          <h2>Les alertes les plus récentes</h2>
+          <div class="row">
+            <div>
+              <table id="myTable" class="display">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Ville</th>
+                    <th>Lieu</th>
+                    <th>Nom du lieu</th>
+                    <th>Type</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </main>
+
+<script>
+  d3.csv('alertes.csv').then(fillComponent);
+
+  function fillComponent(data) {
+    table(data);
+  }
+
+  function table(data) {
+    let table = new DataTable('#myTable', {
+      data: data,
+      order: [[0, 'desc']],
+      columns: [
+        { data: 'date' },
+        { data: 'ville' },
+        { data: 'type' },
+        { data: 'nom' },
+        { data: 'alerte' }
+      ]
+    });
+  }
+</script>
 
 <?php
 include_once("includes/footer.php");
