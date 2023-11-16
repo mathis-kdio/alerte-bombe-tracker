@@ -1,36 +1,86 @@
-ville,date,nombre,type,nom,alerte
-Pessac,13/11/23,1,college,Mitterrand,mail
-Deuil-la-Barre,13/11/23,1,lycee,,appel 
-Meaux,13/11/23,1,lycee,Coubertin,message
-Cherbourg,13/11/23,1,lycee,Alexis-de-Tocqueville,
-Nice,14/11/23,1,college,Segurane,mail
-Nice,14/11/23,1,ecole,Saint-Thomas d Aquin,colis
-Manosque,14/11/23,1,college,Jean Giono,mail 
-Vizille,14/11/23,1,lycee,des Portes de l Oisans,appel 
-Villefontaine,14/11/23,1,college,Rene-Cassinmail,
-Saint-Just-Saint-Rambert,14/11/23,1,college,Anne Frank,
-Laval,14/11/23,1,college,Jules Renard,mail 
-Laval,14/11/23,1,college,Pierre Dubois,mail 
-Laval,14/11/23,1,college,Emmanuel de Martonne,mail 
-Laval,14/11/23,1,college,Alain Gerbault,mail 
-Laval,14/11/23,1,college,Jacques Monod,mail 
-Laval,14/11/23,1,college,Fernand Puech,mail 
-Laval,14/11/23,1,college,Sainte-Therese,mail 
-Laval,14/11/23,1,groupe scolaire,Immaculee Conception,mail 
-Laval,14/11/23,1,lycee,Douanier Rousseau,mail 
-Laval,14/11/23,1,lycee,Avesnieres,mail 
-Laval,14/11/23,1,lycee,Gaston Lesnard,mail 
-Laval,14/11/23,1,lycee,Reaumur,mail 
-Laval,14/11/23,1,lycee,Haute-Follis,mail 
-Laval,14/11/23,1,lycee,Agricampus,mail 
-Chazelles-sur-Lyon,14/11/23,1,college,Raoul-Follereau,mail 
-Laval,15/11/23,1,ecole,Gerard Philippe ,
-Laval,15/11/23,1,ecole,Michelet ,
-Laval,15/11/23,1,ecole,Hilard ,
-Laval,15/11/23,1,college,Fernand Puech ,
-Laval,15/11/23,1,college,Emmanuel de Martonne,
-Laval,15/11/23,1,college,Saint-Therese ,
-Laval,15/11/23,1,lycee,Gaston Lesnard ,
-Laval,15/11/23,1,lycee,Reaumur ,
-Laval,15/11/23,1,lycee,Douanier Rousseau ,
-Laval,15/11/23,1,lycee,Agricampus,
+ville,Departement,date,nombre,type,nom,alerte,article
+Changé ,Sarthe ,07/11/23,1,college,Jacques-Peletier ,mail,https://www.ouest-france.fr/faits-divers/attentat/alerte-a-la-bombe-dans-un-college-sarthois-les-eleves-et-des-riverains-evacues-dbbcf860-7d50-11ee-b253-15639905f92e?utm_source=troove&utm_medium=site
+Pessac,,13/11/23,1,college,Mitterrand,mail,
+Deuil-la-Barre,,13/11/23,1,lycee,,appel ,
+Meaux,,13/11/23,1,lycee,Coubertin,message,
+Cherbourg,,13/11/23,1,lycee,Alexis-de-Tocqueville,,
+,Loire ,13/11/23,1,,,,
+,Loire ,13/11/23,1,,,,
+,Loire ,13/11/23,1,,,,
+,Loire ,13/11/23,1,,,,
+,Loire ,13/11/23,1,,,,
+,Loire ,13/11/23,1,,,,
+,Loire ,13/11/23,1,,,,
+,Loire ,13/11/23,1,,,,
+,Loire ,13/11/23,1,,,,
+,Loire ,13/11/23,1,,,,
+,Loire ,13/11/23,1,,,,
+Havre ,,13/11/23,1,lycee,Saint-Joseph ,,https://www.paris-normandie.fr/id466997/article/2023-11-16/alerte-la-bombe-au-lycee-saint-joseph-du-havre-leleve-soupconne-nie-les-faits
+Pace,Ille-et-Vilaine ,13/11/23,1,college,Saint-Gabriel ,,https://www.ouest-france.fr/bretagne/pace-35740/apres-une-alerte-a-la-bombe-pres-de-2-000-collegiens-evacues-a-pace-7c198022-81fb-11ee-a407-397218b61e71
+Pace,Ille-et-Vilaine ,13/11/23,1,college,Françoise-Dolto ,,https://www.ouest-france.fr/bretagne/pace-35740/apres-une-alerte-a-la-bombe-pres-de-2-000-collegiens-evacues-a-pace-7c198022-81fb-11ee-a407-397218b61e71
+Pace,Ille-et-Vilaine ,13/11/23,1,campus ,Beaulieu ,,https://www.ouest-france.fr/bretagne/pace-35740/apres-une-alerte-a-la-bombe-pres-de-2-000-collegiens-evacues-a-pace-7c198022-81fb-11ee-a407-397218b61e71
+Pace,Ille-et-Vilaine ,13/11/23,1,lycee,Victor-et-Hélène-Basch ,,https://www.ouest-france.fr/bretagne/pace-35740/apres-une-alerte-a-la-bombe-pres-de-2-000-collegiens-evacues-a-pace-7c198022-81fb-11ee-a407-397218b61e71
+Rennes ,Ille-et-Vilaine ,13/11/23,1,lycee,Charles-Tillon ,,https://www.ouest-france.fr/bretagne/pace-35740/apres-une-alerte-a-la-bombe-pres-de-2-000-collegiens-evacues-a-pace-7c198022-81fb-11ee-a407-397218b61e71
+Rennes ,Ille-et-Vilaine ,13/11/23,1,lycee,Jean-Jaurès ,,https://www.ouest-france.fr/bretagne/pace-35740/apres-une-alerte-a-la-bombe-pres-de-2-000-collegiens-evacues-a-pace-7c198022-81fb-11ee-a407-397218b61e71
+Rennes ,Ille-et-Vilaine ,13/11/23,1,college,Ormeaux ,,https://www.ouest-france.fr/bretagne/pace-35740/apres-une-alerte-a-la-bombe-pres-de-2-000-collegiens-evacues-a-pace-7c198022-81fb-11ee-a407-397218b61e71
+Rennes ,Ille-et-Vilaine ,13/11/23,1,college,Landry ,,https://www.ouest-france.fr/bretagne/pace-35740/apres-une-alerte-a-la-bombe-pres-de-2-000-collegiens-evacues-a-pace-7c198022-81fb-11ee-a407-397218b61e71
+Dol-de-Bretagne ,Ille-et-Vilaine ,13/11/23,1,college,Paul-Féval ,,https://www.ouest-france.fr/bretagne/dol-de-bretagne-35120/alerte-a-la-bombe-au-college-de-dol-de-bretagne-600-eleves-evacues-756339a8-8223-11ee-a407-397218b61e71
+Fougères ,Ille-et-Vilaine ,13/11/23,1,lycee,Jean-Guéhenno ,,https://www.lavoixdunord.fr/1396878/article/2023-11-15/le-college-cassin-de-lillers-evacue-ce-mercredi-matin-apres-une-alerte-la-bombe
+Fougères ,Ille-et-Vilaine ,13/11/23,1,college,Thérèse-Pierre ,,https://www.lavoixdunord.fr/1396878/article/2023-11-15/le-college-cassin-de-lillers-evacue-ce-mercredi-matin-apres-une-alerte-la-bombe
+Fougères ,Ille-et-Vilaine ,13/11/23,1,college,Jeanne-d’Arc ,,https://www.lavoixdunord.fr/1396878/article/2023-11-15/le-college-cassin-de-lillers-evacue-ce-mercredi-matin-apres-une-alerte-la-bombe
+Nice,,14/11/23,1,college,Segurane,mail,
+Nice,,14/11/23,1,ecole,Saint-Thomas d Aquin,colis,
+Manosque,,14/11/23,1,college,Jean Giono,mail ,
+Vizille,,14/11/23,1,lycee,des Portes de l Oisans,appel ,
+Villefontaine,,14/11/23,1,college,Rene-Cassinmail,,
+Saint-Just-Saint-Rambert,,14/11/23,1,college,Anne Frank,,
+Laval,,14/11/23,1,college,Jules Renard,mail ,
+Laval,,14/11/23,1,college,Pierre Dubois,mail ,
+Laval,,14/11/23,1,college,Emmanuel de Martonne,mail ,
+Laval,,14/11/23,1,college,Alain Gerbault,mail ,
+Laval,,14/11/23,1,college,Jacques Monod,mail ,
+Laval,,14/11/23,1,college,Fernand Puech,mail ,
+Laval,,14/11/23,1,college,Sainte-Therese,mail ,
+Laval,,14/11/23,1,groupe scolaire,Immaculee Conception,mail ,
+Laval,,14/11/23,1,lycee,Douanier Rousseau,mail ,
+Laval,,14/11/23,1,lycee,Avesnieres,mail ,
+Laval,,14/11/23,1,lycee,Gaston Lesnard,mail ,
+Laval,,14/11/23,1,lycee,Reaumur,mail ,
+Laval,,14/11/23,1,lycee,Haute-Follis,mail ,
+Laval,,14/11/23,1,lycee,Agricampus,mail ,
+Chazelles-sur-Lyon,,14/11/23,1,college,Raoul-Follereau,mail ,
+,Loire ,14/11/23,1,,,,
+,Loire ,14/11/23,1,,,,
+Laval,,15/11/23,1,ecole,Gerard Philippe ,,
+Laval,,15/11/23,1,ecole,Michelet ,,
+Laval,,15/11/23,1,ecole,Hilard ,,
+Laval,,15/11/23,1,college,Fernand Puech ,,
+Laval,,15/11/23,1,college,Emmanuel de Martonne,,
+Laval,,15/11/23,1,college,Saint-Therese ,,
+Laval,,15/11/23,1,lycee,Gaston Lesnard ,,
+Laval,,15/11/23,1,lycee,Reaumur ,,
+Laval,,15/11/23,1,lycee,Douanier Rousseau ,,
+Laval,,15/11/23,1,lycee,Agricampus,,
+,Loire ,15/11/23,1,,,,
+,Loire ,15/11/23,1,,,,
+,Loire ,15/11/23,1,,,,
+,Loire ,15/11/23,1,,,,
+,Loire ,15/11/23,1,,,,
+Le Mans,Sarthe,15/11/23,1,college,Pierre-Gilles-de-Gennes ,,https://www.ouest-france.fr/pays-de-la-loire/le-mans-72000/au-mans-une-alerte-a-la-bombe-au-college-pierre-gilles-de-gennes-les-enfants-evacues-4408dbd0-83a2-11ee-9b65-2282e6d4bdd9
+Lamballe-Armor,,15/11/23,1,lycee,Henri-Avril ,,
+Lillers ,,15/11/23,1,college,René-Cassin ,,https://www.lavoixdunord.fr/1396878/article/2023-11-15/le-college-cassin-de-lillers-evacue-ce-mercredi-matin-apres-une-alerte-la-bombe
+Rennes,Ille-et-Vilaine ,15/11/23,1,lycee,zola,,https://www.ouest-france.fr/bretagne/rennes-35000/nouvelle-alerte-a-la-bombe-au-lycee-zola-a-rennes-e409cf4c-838c-11ee-aabe-38ea97092852
+Firminy ,Loire ,16/11/23,1,college,Bruneaux ,,
+Saint-Étienne ,Loire ,16/11/23,1,college,Gambetta ,,
+Saint-Étienne ,Loire ,16/11/23,1,college,Portail-Rouge ,,
+Sury-le-Comtal ,Loire ,16/11/23,1,college,,,
+Saint-Galmier ,Loire ,16/11/23,1,college,Jules-Romain ,,
+Montbrison  ,Loire ,16/11/23,1,college,Mario-Meunier ,,
+Saint-Just-Saint-Rambert ,Loire ,16/11/23,1,college,Anne-Frank ,,
+Chazelles-sur-Lyon ,Loire ,16/11/23,1,college,Jacques-Brel ,,
+Pélussin ,Loire ,16/11/23,1,college,Gaston-Baty ,,
+Renaison ,Loire ,16/11/23,1,college,La Côte-Roannaise ,,
+Versailles ,,16/11/23,1,lycee,Marie-Curie ,mail,https://www.leparisien.fr/yvelines-78/yvelines-nouvelle-fausse-alerte-a-la-bombe-dans-un-lycee-15-11-2023-WTRJZ25P3FHCRDIWRM536UIFCA.php
+Meaux ,,16/11/23,1,lycee,,,https://actu.fr/ile-de-france/meaux_77284/meaux-pres-de-3-500-eleves-evacues-apres-de-nouvelles-alertes-a-la-bombe-dans-des-lycees_60344992.html
+Meaux ,,16/11/23,1,lycee,,,https://actu.fr/ile-de-france/meaux_77284/meaux-pres-de-3-500-eleves-evacues-apres-de-nouvelles-alertes-a-la-bombe-dans-des-lycees_60344992.html
+Thizy-les-Bourgs ,,16/11/23,1,college,la Platière ,mail,https://www.leprogres.fr/faits-divers-justice/2023/11/16/nouvelle-fausse-alerte-a-la-bombe-a-thizy-les-bourgs
