@@ -38,16 +38,38 @@ include_once("includes/header.php");
             </div>
           </div>
         </div>
+
+        <div class="p-5 bg-body-tertiary border rounded-3 mb-3">
+          <h2>Classements jours avec le plus d'alertes</h2>
+          <div class="row">
+            <div>
+              <table id="myTable" class="display">
+                <thead>
+                  <tr>
+                    <th>Jour</th>
+                    <th>Nombre</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </main>
 
 <script>
-  d3.csv('alertes_par_jours.csv').then(makeChart);
+  d3.csv('alertes_par_jours.csv').then(fillComponent);
 
-  function makeChart(data) {
-    console.log(data)
+  function fillComponent(data) {
+    graph(data);
+    table(data);
+  }
+
+  function graph(data) {
     const ctx = document.getElementById('myChart');
     let dateLabels = data.map(function(d) {return d.date});
     let alertesData = data.map(function(d) {return d.nombre});
@@ -70,8 +92,18 @@ include_once("includes/header.php");
       }
     });
   }
-</script>
 
+  function table(data) {
+    let table = new DataTable('#myTable', {
+      data: data,
+      order: [[1, 'desc']],
+      columns: [
+        { data: 'date' },
+        { data: 'nombre' }
+      ]
+    });
+  }
+</script>
 
 <?php
 include_once("includes/footer.php");
