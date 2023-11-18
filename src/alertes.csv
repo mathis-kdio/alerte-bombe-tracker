@@ -1,5 +1,7 @@
 ville,departement,date,nombre,type,nom,alerte,article
 Changé,Sarthe,07/11/23,1,college,Jacques-Peletier,mail,https://www.ouest-france.fr/faits-divers/attentat/alerte-a-la-bombe-dans-un-college-sarthois-les-eleves-et-des-riverains-evacues-dbbcf860-7d50-11ee-b253-15639905f92e?utm_source=troove&utm_medium=site
+Alby-sur-Chéran,Haute-Savoie,08/11/23,1,college,René Long ,,https://www.francebleu.fr/infos/faits-divers-justice/haute-savoie-le-college-rene-long-d-alby-sur-cheran-de-nouveau-vise-par-une-alerte-a-la-bombe-7373782
+Levallois-Perret,,09/11/23,1,lycee,Léonard-de-Vinci,,https://www.leparisien.fr/hauts-de-seine-92/levallois-perret-92300/levallois-perret-le-lycee-leonard-de-vinci-evacue-apres-une-alerte-a-la-bombe-09-11-2023-7YB6JLPQ5FFFLOIQ3OWG6DWLGM.php
 Pessac,,13/11/23,1,college,Mitterrand,mail,
 Deuil-la-Barre,,13/11/23,1,lycee,,appel,
 Meaux,,13/11/23,1,lycee,Coubertin,message,
@@ -28,6 +30,7 @@ Dol-de-Bretagne,Ille-et-Vilaine,13/11/23,1,college,Paul-F�val,,https://www.oue
 Foug�res,Ille-et-Vilaine,13/11/23,1,lycee,Jean-Gu�henno,,https://www.ouest-france.fr/bretagne/dol-de-bretagne-35120/alerte-a-la-bombe-au-college-de-dol-de-bretagne-600-eleves-evacues-756339a8-8223-11ee-a407-397218b61e71
 Foug�res,Ille-et-Vilaine,13/11/23,1,college,Th�r�se-Pierre,,https://www.ouest-france.fr/bretagne/dol-de-bretagne-35120/alerte-a-la-bombe-au-college-de-dol-de-bretagne-600-eleves-evacues-756339a8-8223-11ee-a407-397218b61e71
 Foug�res,Ille-et-Vilaine,13/11/23,1,college,Jeanne-d�Arc,,https://www.ouest-france.fr/bretagne/dol-de-bretagne-35120/alerte-a-la-bombe-au-college-de-dol-de-bretagne-600-eleves-evacues-756339a8-8223-11ee-a407-397218b61e71
+Valenciennes ,Hauts-de-France ,13/11/23,1,Ecole Ingénieur,INSA,,https://www.lavoixdunord.fr/1395919/article/2023-11-13/alerte-la-bombe-l-ecole-d-ingenieurs-insa-les-sites-de-valenciennes-cambrai-et
 Nice,,14/11/23,1,college,Segurane,mail,
 Nice,,14/11/23,1,ecole,Saint-Thomas d Aquin,colis,
 Manosque,,14/11/23,1,college,Jean Giono,mail,
@@ -70,6 +73,7 @@ Le Mans,Sarthe,15/11/23,1,college,Pierre-Gilles-de-Gennes,,https://www.ouest-fra
 Lamballe-Armor,,15/11/23,1,lycee,Henri-Avril,,
 Lillers,,15/11/23,1,college,Ren�-Cassin,,https://www.lavoixdunord.fr/1396878/article/2023-11-15/le-college-cassin-de-lillers-evacue-ce-mercredi-matin-apres-une-alerte-la-bombe
 Rennes,Ille-et-Vilaine,15/11/23,1,lycee,zola,,https://www.ouest-france.fr/bretagne/rennes-35000/nouvelle-alerte-a-la-bombe-au-lycee-zola-a-rennes-e409cf4c-838c-11ee-aabe-38ea97092852
+Alby-sur-Chéran,Haute-Savoie,15/11/23,1,college,René Long ,,https://www.francebleu.fr/infos/faits-divers-justice/haute-savoie-le-college-rene-long-d-alby-sur-cheran-de-nouveau-vise-par-une-alerte-a-la-bombe-7373782
 Firminy,Loire,16/11/23,1,college,Bruneaux,,
 Saint-�tienne,Loire,16/11/23,1,college,Gambetta,,
 Saint-�tienne,Loire,16/11/23,1,college,Portail-Rouge,,
@@ -84,3 +88,9 @@ Versailles,,16/11/23,1,lycee,Marie-Curie,mail,https://www.leparisien.fr/yvelines
 Meaux,,16/11/23,1,lycee,,,https://actu.fr/ile-de-france/meaux_77284/meaux-pres-de-3-500-eleves-evacues-apres-de-nouvelles-alertes-a-la-bombe-dans-des-lycees_60344992.html
 Meaux,,16/11/23,1,lycee,,,https://actu.fr/ile-de-france/meaux_77284/meaux-pres-de-3-500-eleves-evacues-apres-de-nouvelles-alertes-a-la-bombe-dans-des-lycees_60344992.html
 Thizy-les-Bourgs,,16/11/23,1,college,la Plati�re,mail,https://www.leprogres.fr/faits-divers-justice/2023/11/16/nouvelle-fausse-alerte-a-la-bombe-a-thizy-les-bourgs
+Veauche ,,17/11/23,1,college,Antoine-Guichard,,https://www.leprogres.fr/faits-divers-justice/2023/11/17/veauche-le-college-antoine-guichard-vise-a-son-tour-par-une-alerte-a-la-bombe
+Hyères,Var ,17/11/23,1,lycee,Golfe Hôtel,mail,https://www.bfmtv.com/var/hyeres-les-eleves-du-lycee-golfe-hotel-evacues-apres-une-alerte-a-la-bombe_AN-202311170497.html
+La Seyne-sur-Mer,,17/11/23,1,college,Jean l'Herminier ,mail,https://www.bfmtv.com/var/hyeres-les-eleves-du-lycee-golfe-hotel-evacues-apres-une-alerte-a-la-bombe_AN-202311170497.html
+Saint-Priest ,,17/11/23,1,college,Gérard-Philippe ,,https://www.leprogres.fr/faits-divers-justice/2023/11/17/alerte-a-la-bombe-dans-un-college-de-saint-priest-les-cours-annules-ce-matin
+Lamentin ,Guadeloupe ,17/11/23,1,lycee,,X.com,https://la1ere.francetvinfo.fr/guadeloupe-600-lyceens-confines-dans-leur-etablissement-apres-une-menace-d-attentat-1444382.html
+Vonnas ,Ain ,17/11/23,1,college,Renon ,,https://www.lamontagne.fr/vonnas-01540/actualites/une-32e-alerte-a-la-bombe-dans-un-etablissement-scolaire-de-l-ain_14406127/
