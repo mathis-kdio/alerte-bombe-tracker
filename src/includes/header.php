@@ -23,7 +23,7 @@
           <li class="nav-item"><a href="/" class="nav-link">Accueil</a></li>
           <li class="nav-item"><a href="france.php" class="nav-link">France</a></li>
           <li class="nav-item"><a href="departement.php" class="nav-link">Départements</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Villes</a></li>
+          <li class="nav-item"><a href="ville.php" class="nav-link">Villes</a></li>
           <li class="nav-item"><a href="#" class="nav-link">À propos</a></li>
         </ul>
       </header>
