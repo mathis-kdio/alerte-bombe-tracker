@@ -40,6 +40,7 @@ include_once("includes/header.php");
                   <tr>
                     <th>Date</th>
                     <th>Ville</th>
+                    <th>Département</th>
                     <th>Lieu</th>
                     <th>Nom du lieu</th>
                     <th>Type</th>
@@ -70,6 +71,7 @@ include_once("includes/header.php");
       columns: [
         { data: 'date' },
         { data: 'ville' },
+        { data: 'departement' },
         { data: 'type' },
         { data: 'nom' },
         { data: 'alerte' }
