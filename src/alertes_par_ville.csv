@@ -1,4 +1,4 @@
-ville,nombre
+ville,département,nombre
 Changé,Sarthe,1
 Alby-sur-Chéran,Haute-Savoie,2
 Levallois-Perret,,1
@@ -18,7 +18,7 @@ Manosque,,1
 Vizille,,1
 Villefontaine,,1
 Saint-Just-Saint-Rambert,Loire,2
-Laval,test,25
+Laval,,24
 Chazelles-sur-Lyon,Loire,2
 Le Mans,Sarthe,1
 Lamballe-Armor,,1
