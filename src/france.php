@@ -62,8 +62,8 @@ include_once("includes/header.php");
 </main>
 
 <script>
-  d3.csv('alertes.csv').then(recap);
-  d3.csv('alertes_par_jours.csv').then(fillComponent);
+  d3.csv('https://raw.githubusercontent.com/mathis-kdio/alerte-bombe-tracker/main/src/alertes.csv').then(recap);
+  d3.csv('https://raw.githubusercontent.com/mathis-kdio/alerte-bombe-tracker/main/src/alertes_par_jours.csv').then(fillComponent);
 
   function fillComponent(data) {
     graph(data);

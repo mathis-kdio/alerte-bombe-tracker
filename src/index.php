@@ -68,7 +68,7 @@ include_once("includes/header.php");
 </main>
 
 <script>
-  d3.csv('alertes.csv').then(fillComponent);
+  d3.csv('https://raw.githubusercontent.com/mathis-kdio/alerte-bombe-tracker/main/src/alertes.csv').then(fillComponent);
 
   function fillComponent(data) {
     const date = new Date();
