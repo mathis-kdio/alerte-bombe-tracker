@@ -13,19 +13,20 @@ with open(os.path.join(__location__, 'alertes.csv'), 'r') as fichier_csv:
 
     # Initialiser un compteur de villes
     compteur_villes = Counter()
-
+    departement = dict()
     # Parcourir les lignes du fichier et compter les alertes de chaque ville
     for ligne in csv_reader:
         ville = ligne[0]  # La première colonne contient la ville
         compteur_villes[ville] += 1
+        departement[ville] = ligne[1]
 
 # Écriture des résultats dans un nouveau fichier CSV
-with open(os.path.join(__location__, 'alertes_par_jours.csv'), 'w', newline='') as fichier_resultat:
+with open(os.path.join(__location__, 'alertes_par_ville.csv'), 'w', newline='') as fichier_resultat:
     csv_writer = csv.writer(fichier_resultat)
 
     # Écrire l'en-tête du nouveau fichier CSV
-    csv_writer.writerow(['ville', 'nombre'])
+    csv_writer.writerow(['ville', 'département', 'nombre'])
 
     # Écrire les données dans le nouveau fichier CSV
     for ville, nombre_alertes in compteur_villes.items():
-        csv_writer.writerow([ville, nombre_alertes])
+        csv_writer.writerow([ville, departement[ville], nombre_alertes])
