@@ -3,7 +3,7 @@ name: Run Python Script on Commit
 on:
   push:
     paths:
-      - '**.csv'  # Path to the file that triggers the workflow
+      - 'src/alertes.csv'  # Path to the file that triggers the workflow
 
 jobs:
   run-script:
@@ -24,7 +24,7 @@ jobs:
 
       - name: execute py script
         run: |
-            python src\alerte_to_alerte_par_jour_script.py
+            python src/alerte_to_alerte_par_jour_script.py
             git config user.name github-actions
             git config user.email github-actions@github.com
             git add .
