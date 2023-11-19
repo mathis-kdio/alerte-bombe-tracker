@@ -41,16 +41,16 @@ function fillComponent(data) {
 function table(data) {
   let table = new DataTable('#myTable', {
     data: data,
-    order: [[1, 'desc']],
+    order: [[2, 'desc']],
     columns: [
-      { data: 'nom',
+      { data: 'ville',
         render: function (data, type, row) {
-          return '<a href="?ville='+row.nom+'">'+row.nom+'</a>';
+          return '<a href="?ville='+row.ville+'">'+row.ville+'</a>';
         }
       },
-      { data: 'departement',
+      { data: 'département',
         render: function (data, type, row) {
-          return '<a href="departement.php?departement='+row.departement+'">'+row.departement+'</a>';
+          return '<a href="departement.php?departement='+row.département+'">'+row.département+'</a>';
         }
       },
       { data: 'nombre' }
