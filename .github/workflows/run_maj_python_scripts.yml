@@ -26,6 +26,7 @@ jobs:
         run: |
             python src/alerte_to_alerte_par_jour_script.py
             git add -A
+            git diff-index --quiet HEAD || (git commit -a -m "updated files" --allow-empty)
             
       - name: Push Changes
         if: success()
