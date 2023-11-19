@@ -73,6 +73,7 @@ include_once("includes/header.php");
 
 <script>
   //https://www.datavis.fr/index.php/d3js/map-population
+  //https://pixees.fr/informatiquelycee/d3_a15.html
   let svg = d3.select("svg");
   let path = d3.geoPath();
   let projection = d3.geoConicConformal()
@@ -83,20 +84,24 @@ include_once("includes/header.php");
   d3.json("departements.json").then(function(geoJSON) {
     let map = svg.selectAll("path").data(geoJSON.features)
     map.enter()
-        .append("path")
-        .attr("fill","white")
-        .attr("stroke","black")
-        .attr("d", path)
-        .on("mouseover",function(){
-        		d3.select(this)
-        			.attr("fill","red")
-        	})
-        .on("mouseout",function(){
-          d3.select(this)
-            .attr("fill","white")
-        });
-});
-
+      .append("path")
+      .attr("fill","white")
+      .attr("stroke","black")
+      .attr("d", path)
+      .on("mouseover",function(d) {
+        d3.select(this)
+          .attr("fill","red")
+          .style("cursor", "pointer")
+      })
+      .on("mouseout",function() {
+        d3.select(this)
+          .attr("fill","white")
+          .style("cursor", "default")
+      })
+      .on("click", function(d, i) {
+        window.location = "?departement=" + i.properties.CODE_DEPT;
+      });
+  });
 
 </script>
 
