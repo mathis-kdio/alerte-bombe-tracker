@@ -3,7 +3,7 @@ name: Run Python Script on Commit
 on:
   push:
     paths:
-      - 'src\alertes.csv'  # Path to the file that triggers the workflow
+      - '**.csv'  # Path to the file that triggers the workflow
 
 jobs:
   run-script:
