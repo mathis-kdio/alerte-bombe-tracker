@@ -27,6 +27,8 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
             python src/alerte_to_alerte_par_jour_script.py
+            git config --local user.name "${{ github.actor }}"
+            git config --local user.email "${{ github.actor }}@users.noreply.github.com"
             git commit -am "Fichier alerte_par_jours.csv mis à jour" || echo "There is nothing to commit"
             git push
 
