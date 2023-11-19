@@ -10,18 +10,18 @@ include_once("includes/header.php");
     <div class="row align-items-md-stretch">
       <div class="col-md-12">
         <div class="p-5 bg-body-tertiary border rounded-3 mb-3">
-          <h2>Les chiffres d'aujoud'hui (14-11-2023)</h2>
+          <h2>Les chiffres d'aujoud'hui (<span id="recapDate">XX-XX-XX</span>)</h2>
           <div class="row">
             <div class="col-md-3">
-              <h3>21</h3>
+              <h3 id="recapAlertes">XX</h3>
               <h4>Alertes à la bombe</h4>
             </div>
             <div class="col-md-3">
-              <h3>7</h3>
+              <h3 id="recapVilles">XX</h3>
               <h4>Nombre de villes impactées</h4>
             </div>
             <div class="col-md-3">
-              <h3>21</h3>
+              <h3>XX</h3>
               <h4>Etablissements scolaires impactés</h4>
             </div>
             <div class="col-md-3">
@@ -73,9 +73,19 @@ include_once("includes/header.php");
   function fillComponent(data) {
     const date = new Date();
     let today = date.getDate() +'/'+ (date.getMonth() + 1) +'/'+ date.getFullYear().toString().slice(-2);
+    document.getElementById("recapDate").textContent=today;
+
     const dataToday = data.filter(element => element.date == today);
+    recap(dataToday);
     table(dataToday);
     graphTypesLieux(dataToday);
+  }
+
+  function recap(data) {
+    let totalAlertes = d3.count(data, (d) => d.nombre)
+    document.getElementById("recapAlertes").textContent=totalAlertes;
+    const villes = d3.groups(data, (d) => d.ville);
+    document.getElementById("recapVilles").textContent=villes.length;
   }
 
   function table(data) {
