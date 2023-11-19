@@ -25,7 +25,7 @@ with open(os.path.join(__location__, 'alertes_par_ville.csv'), 'w', newline='') 
     csv_writer = csv.writer(fichier_resultat)
 
     # Écrire l'en-tête du nouveau fichier CSV
-    csv_writer.writerow(['ville', 'nombre'])
+    csv_writer.writerow(['ville', 'département', 'nombre'])
 
     # Écrire les données dans le nouveau fichier CSV
     for ville, nombre_alertes in compteur_villes.items():
