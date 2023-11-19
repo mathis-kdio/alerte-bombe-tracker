@@ -8,9 +8,10 @@ include_once("includes/header.php");
     
     <div class="p-5 bg-body-tertiary border rounded-3 mb-3">
       <h2>Nombre d'alertes à la bombe chaque jour</h2>
-      <div class="row">
-        <svg width="600px" height="600px">
-        </svg>
+      <div class="row justify-content-center">
+        <div class="col-auto">
+          <svg height="600px" width="600px"></svg>
+        </div>
       </div>
     </div>
 
@@ -65,8 +66,9 @@ include_once("includes/header.php");
 </main>
 
 <script>
-  //https://www.datavis.fr/index.php/d3js/map-population
+  //https://www.datavis.fr/index.php/d3js/map-improve
   //https://pixees.fr/informatiquelycee/d3_a15.html
+  let colors = ['#d4eac7', '#c6e3b5', '#b7dda2', '#a9d68f', '#9bcf7d', '#8cc86a', '#7ec157', '#77be4e', '#70ba45', '#65a83e', '#599537', '#4e8230', '#437029', '#385d22', '#2d4a1c', '#223815'];
   let svg = d3.select("svg");
   let path = d3.geoPath();
   let projection = d3.geoConicConformal()
