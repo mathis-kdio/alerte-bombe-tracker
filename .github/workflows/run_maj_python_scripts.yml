@@ -25,14 +25,14 @@ jobs:
         run: python src/alerte_to_alerte_par_jour_script.py
 
       - name: execute script pour récupérer alerte par jour
-        run: python src/alerte_to_alerte_par_jour_script.py
-        
+        run: python src/alerte_to_alerte_par_ville_script.py
+
       - name: commit and push
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
           git config --local user.name "${{ github.actor }}"
           git config --local user.email "${{ github.actor }}@users.noreply.github.com"
-          git commit -am "Fichier alerte_par_jours.csv mis à jour" || echo "There is nothing to commit"
+          git commit -am "Fichier csv mis à jour" || echo "There is nothing to commit"
           git push
 
