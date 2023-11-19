@@ -43,8 +43,16 @@ function table(data) {
     data: data,
     order: [[1, 'desc']],
     columns: [
-      { data: 'nom' },
-      { data: 'departement' },
+      { data: 'nom',
+        render: function (data, type, row) {
+          return '<a href="?ville='+row.nom+'">'+row.nom+'</a>';
+        }
+      },
+      { data: 'departement',
+        render: function (data, type, row) {
+          return '<a href="departement.php?departement='+row.departement+'">'+row.departement+'</a>';
+        }
+      },
       { data: 'nombre' }
     ]
   });
