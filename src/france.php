@@ -12,11 +12,11 @@ include_once("includes/header.php");
           <h2>Au total</h2>
           <div class="row">
             <div class="col-md-3">
-              <h3 id='recapAlertes'>XXX</h3>
+              <h3 id="recapAlertes">XXX</h3>
               <h4>Alertes à la bombe</h4>
             </div>
             <div class="col-md-3">
-              <h3 id='recapVilles'>XXX</h3>
+              <h3 id="recapVilles">XXX</h3>
               <h4>Nombre de villes impactées</h4>
             </div>
             <div class="col-md-3">
