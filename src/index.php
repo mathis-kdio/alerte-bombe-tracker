@@ -32,7 +32,7 @@ include_once("includes/header.php");
         </div>
 
         <div class="p-5 bg-body-tertiary border rounded-3 mb-3">
-          <h2>Les alertes les plus récentes</h2>
+          <h2>Les alertes du jour</h2>
           <div class="row">
             <div>
               <table id="myTable" class="display">
@@ -52,6 +52,16 @@ include_once("includes/header.php");
             </div>
           </div>
         </div>
+
+        <div class="p-5 bg-body-tertiary border rounded-3 mb-3">
+          <h2>Répartition des types de lieux touchés aujourd'hui</h2>
+          <div class="row justify-content-center">
+            <div class="col-6">
+              <canvas id="graphTypesLieux"></canvas>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
@@ -61,7 +71,11 @@ include_once("includes/header.php");
   d3.csv('alertes.csv').then(fillComponent);
 
   function fillComponent(data) {
-    table(data);
+    const date = new Date();
+    let today = date.getDate() +'/'+ (date.getMonth() + 1) +'/'+ date.getFullYear().toString().slice(-2);
+    const dataToday = data.filter(element => element.date == today);
+    table(dataToday);
+    graphTypesLieux(dataToday);
   }
 
   function table(data) {
@@ -78,6 +92,26 @@ include_once("includes/header.php");
       ]
     });
   }
+
+  function graphTypesLieux(data) {
+    const ctx = document.getElementById('graphTypesLieux');
+    let alertesData = data.map(function(d) {return d.type});
+    let labels = [...new Set(alertesData)]
+    const occurrences = alertesData.reduce(function (acc, curr) {
+      return acc[curr] ? ++acc[curr] : acc[curr] = 1, acc
+    }, {});
+    new Chart(ctx, {
+      type: 'doughnut',
+      data: {
+        labels: labels,
+        datasets: [{
+          label: 'touchés aujourd\'hui',
+          data: Object.values(occurrences),
+        }]
+      }
+    });
+  }
+
 </script>
 
 <?php
