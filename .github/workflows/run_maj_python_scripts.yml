@@ -27,7 +27,6 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
             python src/alerte_to_alerte_par_jour_script.py
-            git add -A
             git commit -am "Fichier alerte_par_jours.csv mis à jour" || echo "There is nothing to commit"
             git push
 
