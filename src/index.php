@@ -72,7 +72,7 @@ include_once("includes/header.php");
 
   function fillComponent(data) {
     const date = new Date();
-    let today = date.getDate()-2 +'/'+ (date.getMonth() + 1) +'/'+ date.getFullYear().toString().slice(-2);
+    let today = date.getDate() +'/'+ (date.getMonth() + 1) +'/'+ date.getFullYear().toString().slice(-2);
     const dataToday = data.filter(element => element.date == today);
     table(dataToday);
     graphTypesLieux(dataToday);
