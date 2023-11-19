@@ -25,7 +25,8 @@ jobs:
       - name: execute py script
         run: |
             python src/alerte_to_alerte_par_jour_script.py
-
+            git add -A
+            
       - name: Push Changes
         if: success()
         uses: ad-m/github-push-action@master
