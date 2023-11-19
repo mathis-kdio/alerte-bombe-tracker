@@ -23,13 +23,11 @@ jobs:
             if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: execute py script
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
             python src/alerte_to_alerte_par_jour_script.py
             git add -A
-            git diff-index --quiet HEAD || (git commit -a -m "updated files" --allow-empty)
-            
-      - name: Push Changes
-        if: success()
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+            git commit -am "Fichier alerte_par_jours.csv mis à jour" || echo "There is nothing to commit"
+            git push
+
