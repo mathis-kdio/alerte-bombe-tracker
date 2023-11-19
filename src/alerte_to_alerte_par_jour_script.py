@@ -24,7 +24,7 @@ with open(os.path.join(__location__, 'alertes_par_jours.csv'), 'w', newline='') 
     csv_writer = csv.writer(fichier_resultat)
 
     # Écrire l'en-tête du nouveau fichier CSV
-    csv_writer.writerow(['Date', 'Nombre'])
+    csv_writer.writerow(['date', 'nombre'])
 
     # Écrire les données dans le nouveau fichier CSV
     for date, nombre_alertes in compteur_dates.items():
